@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="IE1(failed)" parallel="tests">
+    <parameter name="node" value="http://135.250.34.107:4444/wd/hub"/>
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.zoho.tests.ValidLoginLogout">
+        <methods>
+          <include name="testValidLoginLogout"/>
+          <include name="closeApp"/>
+          <include name="openApp"/>
+          <include name="setDriverPath"/>
+        </methods>
+      </class> <!-- com.zoho.tests.ValidLoginLogout -->
+      <class name="com.zoho.tests.VerifyVersion">
+        <methods>
+          <include name="closeApp"/>
+          <include name="testVerifyVersion"/>
+          <include name="openApp"/>
+          <include name="setDriverPath"/>
+        </methods>
+      </class> <!-- com.zoho.tests.VerifyVersion -->
+      <class name="com.zoho.tests.InvalidLogin">
+        <methods>
+          <include name="testInvalidLogin"/>
+          <include name="closeApp"/>
+          <include name="openApp"/>
+          <include name="setDriverPath"/>
+        </methods>
+      </class> <!-- com.zoho.tests.InvalidLogin -->
+    </classes>
+  </test> <!-- IE1(failed) -->
+  <test name="FIREFOX1(failed)" parallel="tests">
+    <parameter name="node" value="http://135.250.34.107:4444/wd/hub"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.zoho.tests.VerifyVersion">
+        <methods>
+          <include name="closeApp"/>
+          <include name="testVerifyVersion"/>
+          <include name="openApp"/>
+          <include name="setDriverPath"/>
+        </methods>
+      </class> <!-- com.zoho.tests.VerifyVersion -->
+      <class name="com.zoho.tests.InvalidLogin">
+        <methods>
+          <include name="testInvalidLogin"/>
+          <include name="closeApp"/>
+          <include name="openApp"/>
+          <include name="setDriverPath"/>
+        </methods>
+      </class> <!-- com.zoho.tests.InvalidLogin -->
+    </classes>
+  </test> <!-- FIREFOX1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

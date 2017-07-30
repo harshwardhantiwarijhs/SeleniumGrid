@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests">
+
+  <test name="Chrome1">
+   <parameter name="node" value="http://135.250.34.107:4444/wd/hub"/>
+   <parameter name="browser" value="chrome"/>
+   <packages>
+ 	<package name="com.zoho.tests"/>
+   </packages>
+  </test> 
+   <test name="FIREFOX1">
+   <parameter name="node" value="http://135.250.34.107:4444/wd/hub"/>
+   <parameter name="browser" value="firefox"/>
+   <packages>
+ 	<package name="com.zoho.tests"/>
+   </packages>
+  </test> 
+   <test name="IE1">
+   <parameter name="node" value="http://135.250.34.107:4444/wd/hub"/>
+   <parameter name="browser" value="ie"/>
+   <packages>
+ 	<package name="com.zoho.tests"/>
+   </packages>
+  </test> 
+ </suite>
